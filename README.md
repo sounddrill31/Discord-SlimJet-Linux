@@ -9,5 +9,5 @@ All custom lightweight clients were using wayyy more modifications than discord 
 >Why SlimJet(chromium based)and not midori(gtk?? or maybe electron???)?
 It was leading to slowdown on my device
 
-#Known Issues
+# Known Issues
 For some reason discord is not showing the chat size adjusting thing, so grab a mouse, and hold control whiile moving mouse wheel up-down to your liking.
