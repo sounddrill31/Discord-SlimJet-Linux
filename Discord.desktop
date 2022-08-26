@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Discord-SlimJet
+Comment=Discord running via SlimJet
+Exec=bash ~/Discord/discord.sh
+Icon=~/Discord/icon.svg
+Terminal=False
