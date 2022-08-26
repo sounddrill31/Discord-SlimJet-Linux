@@ -1,0 +1,12 @@
+http://www.ebay.com,"ebay - Discount shopping"
+http://www.booking.com?aid=845847,"Book hotels & vacation rentals"
+https://goto.walmart.com/c/2000856/566719/9383?sourceid=imp_000011112222333344&u=www.walmart.com&veh=aff,"Walmart.com"
+http://alitems.com/g/1e8d114494d371ae616e16525dc3e8/,"Aliexpress Shopping"
+https://lite.bz/uBnpT0,"Dell.com"
+https://lite.al/wAMsP,"Bestbuy.com"
+https://lite.al/QHghg,"Macy's"
+https://powerhouse.go2cloud.org/aff_c?offer_id=174&aff_id=2468,"World's fastest VPN"
+https://www.facebook.com/,"Facebook"
+https://www.gmail.com,Gmail
+https://www.youtube.com,"YouTube"
+https://www.netflix.com,Netflix

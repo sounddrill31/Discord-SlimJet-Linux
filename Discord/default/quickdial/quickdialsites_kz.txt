@@ -1,0 +1,12 @@
+http://www.yandex.ru/?clid=2414603,"Yandex"
+http://www.booking.com?aid=845847,"Book hotels & vacation rentals"
+http://alitems.com/g/1e8d114494d371ae616e16525dc3e8/,"Aliexpress Shopping"
+https://powerhouse.go2cloud.org/aff_c?offer_id=174&aff_id=2468,"World's fastest VPN"
+https://www.priceline.com/home/?refid=PLHBC7029OPQ&refclickid=banner_srch_wide,"Priceline.com"
+https://www.yahoo.com/,Yahoo
+https://www.groupon.com/,"Groupon"
+https://www.facebook.com/,"Facebook"
+https://www.gmail.com,Gmail
+https://www.youtube.com,"YouTube"
+https://www.netflix.com,Netflix
+https://www.craigslist.org,Craigslist
