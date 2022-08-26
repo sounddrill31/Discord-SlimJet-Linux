@@ -1,0 +1,117 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>Manage proxies</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="css/common.css" rel="stylesheet" type="text/css" />
+    <script src="proxy_manager.js"></script>
+</head>
+<body>
+    <!--<button onclick="InitDialog([{ ProxyName: 'proxy0', bypass_list: '<local>', mode: 'fixed_servers', pac_mandatory: '', pac_url: '', server: '127.0.0.1:80' }, { ProxyName: 'proxy1', bypass_list: 'qq.com', mode: 'pac_script', pac_mandatory: '', pac_url: 'sina.com', server: 'http=132.05.5.5:44;https=44:1;ftp=55:2;socks=socks5://66:3' }], 1);">Test</button>-->
+    <!--<button onclick="InitDialog([], -1);">Test</button>-->
+    <div style="width:580px;height:380px">
+        <div id="ProxyManagerPage" class="page" >
+            <div class="content-area">
+                <table border="0" width="569" style="font-size:12px">
+                    <tr valign="top">
+                        <td width="190">
+                            <label>Proxy list:</label>
+                            <select id="proxy_list" size="17" style="width:170px"></select>
+                            <p>
+                                <input type="button" value="New" id="new_proxy">
+                                <input type="button" value="Delete" id="delete_proxy">
+                            </p>
+                        </td>
+                        <td>
+                            <label>
+                                Name:
+                                <input type="text" id="proxy_name" size="30" />
+                            </label>
+                            <br />
+                            <br />
+                            <label>
+                                <input type="radio" value="use_fixed_proxy" checked id="use_fixed_proxy" name="use_fixed_proxy">
+                                Use fixed proxy
+                            </label>
+                            <table border="0" width="100%" style="font-size:12px">
+                                <tr>
+                                    <td width="75"><label>Type</label></td>
+                                    <td width="222"><label>Server address</label></td>
+                                    <td width="119"><label>Port</label></td>
+                                </tr>
+                                <tr valign="top">
+                                    <td width="75"><label>HTTP<label></td>
+                                    <td>
+                                        <input type="text" size="30" id="http_server">
+                                        <br>
+                                    </td>
+                                    <td><input type="text" size="5" id="http_port"></td>
+                                </tr>
+                                <tr>
+                                    <td width="75">&nbsp;</td>
+                                    <td colspan="2">
+                                        <label>
+                                            <input type="checkbox" id="app_to_all" />
+                                            Use
+                                            http proxy for all protocols
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="75"><label>HTTPS</label></td>
+                                    <td><input type="text" id="https_server" size="30"></td>
+                                    <td><input type="text" id="https_port" size="5"></td>
+                                </tr>
+                                <tr>
+                                    <td width="75"><label>FTP</label></td>
+                                    <td><input type="text" id="ftp_server" size="30"></td>
+                                    <td><input type="text" id="ftp_port" size="5"></td>
+                                </tr>
+                                <tr valign="top">
+                                    <td width="75"><label>SOCKS</label></td>
+                                    <td>
+                                        <input type="text" name="socks_server" id="socks_server" size="30">
+                                        <br>
+                                    </td>
+                                    <td><input type="text" name="socks_port" id="socks_port" size="5"></td>
+                                </tr>
+                                <tr>
+                                    <td width="75">&nbsp;</td>
+                                    <td colspan="2">
+                                        <label>
+                                            <input type="radio" value="V1" checked name="socks_type" id="socks4">
+                                            Socks4
+                                        </label>
+                                        <label>
+                                            <input type="radio" value="V1" checked name="socks_type" id="socks5">
+                                            Socks5
+                                        </label>
+                                    </td>
+                                </tr>
+                            </table>
+                            <p>
+                                <label>
+                                    <input type="radio" checked="checked" id="use_pac" />
+                                    Use automatic proxy configuration URL
+                                </label>
+                                <br />
+                                <input type="text" id="pac_url" size="60" />
+                            </p>
+                            <p>
+                                <label>Do not use proxy for the following address patterns:</label>
+                                <input type="text" id="bypass_list" size="60" title="lz(Separate the patterns by commas)" />
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="action-area">
+                <div class="button-strip" align="right">
+                    <button id="proxy_manager_page_confirm" onclick = "onOK();">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span style="display:none" id="maxItems">Max: 20 items</span>
+</body>
+</html>

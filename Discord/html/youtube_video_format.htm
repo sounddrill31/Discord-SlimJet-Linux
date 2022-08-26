@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Select video format</title>
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="formdata.js"></script>
+<script type="text/javascript">
+
+function selectFormat(format)
+{
+  document.sjReturnValue = format;
+  window.close();
+}
+
+document.onkeydown = function(e)
+{
+    if((e.keyCode || e.which) == 13){
+        selectFormat("webm");
+    }
+}
+</script>
+</head>
+<body style="font-size:13px; font-family:Verdana, Geneva, sans-serif">
+<div style="width:400px">
+<p>Please select the format to save the downloaded video. Webm videos can be played with VLC media player or directly played in Slimjet. Mp4 format takes very long time (could be hours) to convert for long videos.</p>
+  <table width="100%" border="0">
+    <tr align="center">
+      <td width="50%"><button id="button_edit" onclick = "selectFormat('webm');" style="min-width:160px">Save as Webm</button></td>
+      <td width="50%"><button id="button_ok" onclick = "selectFormat('mp4');" style="min-width:80px">Convert to MP4</button></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

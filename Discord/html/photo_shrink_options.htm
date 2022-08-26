@@ -1,0 +1,41 @@
+﻿<!doctype html>
+<html lang="en">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Photo shrinking settings</title>
+  <style>
+  button
+  {
+    min-width:80px;
+  }
+  </style>
+	<link href="css/common.css" rel="stylesheet" type="text/css" />
+  <script src="photo_shrink_options.js"></script>
+ </head>
+ <body>
+	 <div style="width:400px;height:270px" >
+	  <div class="content-area">
+			<p>Default photo shrinking resolution: <input name="default_resolution"  id="default_resolution" type="text" style="width:40px" data-type="number" pref="photoshrink.default_resolution"/> K <span>pixels</span>.</p>
+			<p style="margin-bottom:10px">Domains to apply automatic photo shrinking: </p>
+			<select name="photo_shrink_domain_list" size="8" id="photo_shrink_domain_list" style="width:400px">
+			</select>
+			<p style="margin-top:10px; margin-bottom:10px">
+				Domain: <input name="phot_shrink_domain"  id="phot_shrink_domain" type="text" style="width:130px"/>
+				Resolution: <input name="phot_shrink_resolution"  id="phot_shrink_resolution" type="text" style="width:40px"/> K <span>pixels</span>.
+				<br><label id="label_info" style="font-size:11px;color:Crimson"></label>
+			</p>
+	  </div>
+	  <div class="action-area">
+		<div class="button-strip" align ="right">
+            <button id="photo_shrink_add_domain">Add</button>&nbsp;
+            <button id="photo_shrink_remove_domain" >Remove</button>&nbsp;
+            <button id="photo_shrink_change_domain" >Change</button>&nbsp;
+			<button id="photo_shrink_done_domain"  onclick = "onOK();"    >Done</button>
+		</div>
+	  </div>
+	 </div>
+	<!--
+	<button onclick="InitDialog(24,'sina.com;google.com.hk:24;www.abc.org:33;qq.com:21');">Test</button>    
+	-->
+</body>
+</html>
