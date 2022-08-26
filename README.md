@@ -15,3 +15,9 @@ It was leading to slowdown on my device
 
 # Known Issues
 For some reason discord is not showing the chat size adjusting thing, so grab a mouse, and hold control whiile moving mouse wheel up-down to your liking.
+
+# Things you must do if you want to fork this:
+1. Download latest slimjet release
+2. Edit flashpeak-slimjet
+3. Remove the part that creates desktop file
+4. Edit my discord.sh file to your liking
