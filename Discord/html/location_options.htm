@@ -1,0 +1,90 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Location</title>
+    <script src="location_options.js"></script>
+		<link href="css/common.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!--<button onclick="InitDialog2();">Test</button>-->
+    <div id="locationOptionsPage" class="page" style="width:540px;height:250px">
+        <div class="close-button" id="locationOptionsPageCloseButton"></div>
+        <div class="content-area">
+            <div class="my-location-options-header">
+                <div></div>
+            </div>
+            <div class="my-location-options">
+                <table style="width: 100%;font-size:12px">
+                    <tr>
+                        <td style="width: 100px">Country/region:</td>
+                        <td>
+
+                            <select id="my-country" name="my_country"></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Street address:</td>
+                        <td>
+                            <input id="my-street-address" pref="browser.addr_street" type="text" style="width: 100%">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Apt./suite number:</td>
+                        <td>
+
+                            <input id="my-suite-number" pref="browser.addr_apt" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>City:</td>
+                        <td>
+
+                            <input id="my-city" pref="browser.addr_city" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>State (USA only):</td>
+                        <td>
+
+                            <select id="my-usa-state" name="state_usa"></select>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Non-US state/province:</td>
+                        <td>
+
+                            <input id="my-province" pref="browser.addr_state" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Zip code:</td>
+                        <td>
+
+                            <input id="my-zip-code" pref="browser.addr_zip" type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="my-location-options-footer">
+                NOTE: City and province name should be specified in English to get correct
+                local weather.
+            </div>
+        </div>
+
+        <div class="action-area">
+            <div class="button-strip">
+			  <table width="100%" border="0">
+				<tr align="center">
+				  <td width="50%"><button id="my-location-confirm" onclick = "onOK();" style="min-width:80px">OK</button></td>
+				  <td width="50%"><button onclick = "onCancel();" style="min-width:80px">Cancel</button></td>
+				</tr>
+			  </table>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+<!-- END OF Kent@FlashPeak location options html -->
