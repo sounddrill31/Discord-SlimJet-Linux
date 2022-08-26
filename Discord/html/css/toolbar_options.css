@@ -1,0 +1,137 @@
+/* Kent@FlashPeak toolbar options css */
+.toolbutton-img {
+  height: 24px;
+  padding: 3px;
+  vertical-align: middle;
+  width: 24px;
+}
+
+.toolbutton-name {
+  padding: 0px;
+}
+
+.toolbar-options {
+  display: -webkit-box;
+  margin: 10px 0;
+}
+
+.toolbar-options-lower-left button,
+.current-button-list button {
+  min-width: 70px;
+}
+
+.toolbar-options h3 {
+  -webkit-margin-start: 12px;
+  font-size: 100%;
+  font-weight: bold;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.toolbar-options-contents > span:not(.input-method-label) {
+  display: inline-block;
+  margin: 1px;
+  padding: 0.42em 10px;
+}
+
+.toolbar-options-header,
+.toolbar-options-footer {
+  line-height: 1.2em;
+  margin: 10px 0;
+}
+
+#available-button-list,
+#current-button-list {
+  border: 1px solid #ccc;
+  height: 400px;
+  padding: 0;
+  vertical-align: top;
+}
+
+#available-button-list {
+  -webkit-box-orient: vertical;
+
+  background-color: rgb(235, 239, 249);
+
+
+  display: -webkit-box;
+  width: 300px;
+}
+
+#current-button-list {
+  -webkit-margin-start: -1px;
+  width: 300px;
+}
+
+#current-button-list h3:not(:first-of-type) {
+  margin-top: 24px;
+}
+
+.toolbar-options-notification > div {
+  margin-bottom: 4px;
+}
+
+#toolbar-options-input-method-list button {
+  -webkit-margin-start: 20px;
+  display: block;
+  margin-bottom: 0.65em;
+  margin-top: 0.65em;
+}
+
+#toolbar-options-list {
+  -webkit-box-flex: 1;
+  outline: none;
+  padding: 0;
+  width: 100%;
+}
+
+#toolbar-options-list .toolbar-name {
+  -webkit-box-flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#toolbar-options-list li {
+  -webkit-padding-start: 12px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+
+#toolbar-options-list-dropmarker {
+  background-clip: padding-box;
+  background-color: hsl(214, 91%, 65%);
+  border: 3px solid hsl(214, 91%, 65%);
+  border-bottom-color: transparent;
+  border-radius: 0;
+  border-top-color: transparent;
+  box-sizing: border-box;
+  display: none;
+  height: 8px;
+  overflow: hidden;
+  pointer-events: none;
+  position: fixed;
+  z-index: 10;
+}
+/* END OF Kent@FlashPeak toolbar options css */
+
+/* web dialog show fixed */
+#button_area {
+  text-align: right;
+  margin-right: 20px;
+}
+list .deletable-item > :first-child {
+  -webkit-box-align: center;
+  -webkit-box-flex: 1;
+  -webkit-padding-end: 5px;
+  display: -webkit-box;
+}
+list > * {
+  cursor: default;
+  line-height: 20px;
+  user-select: none;
+  white-space: pre;
+}
+.row-delete-button {
+  display: none;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Screen recorder</title>
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function onBuy()
+{
+    location.href='sjcmd://go_to_buy_recorder';
+    document.sjReturnValue = "buynow";
+    setTimeout(function () {
+        window.close();
+    },500);
+}
+
+function onClose()
+{
+    document.sjReturnValue = "";
+    window.close();
+}
+function init(is_close) {
+    if (is_close) {
+        document.getElementById('stop_info').style.display='';
+    }
+}
+</SCRIPT>
+</head>
+<BODY style="font-size:13px; font-family:Verdana, Geneva, sans-serif">
+<div style="width:240px">
+    <p>
+    <span id="stop_info" style="display: none;">Video recording has been terminated at 10 minutes.</span>
+    <span id="purchase_info">If you wish to record for more than 10 minutes, you need purchase the Video Recorder premium feature.</span>
+    </p>
+  <table width="100%" border="0">
+    <tr align="center">
+      <td width="50%"><button type="button" onclick = "onBuy();" style="min-width:80px">Buy Now</button></td>
+      <td><button type="button" onclick = "onClose();" style="min-width:80px" >Close</button></td>
+    </tr>
+  </table>
+</div>
+</BODY>
+</HTML>
