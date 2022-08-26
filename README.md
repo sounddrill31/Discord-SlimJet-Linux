@@ -1,6 +1,7 @@
 # Discord-SlimJet-Linux
 Discord using slimjet wrapper
-Zip download, and extract wherever
+# Installation
+Zip download, and extract to slimjet folder of version 35.0.3.0(archive version, no guarantee it'll work any other way)(or use releases)
 Run ```bash discord.sh```
 
 > Why?
