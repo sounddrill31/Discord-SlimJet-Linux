@@ -1,1 +1,1 @@
-~/Discord/flashpeak-slimjet --app=https://discord.com/app
+bash flashpeak-slimjet --app=https://discord.com/app
